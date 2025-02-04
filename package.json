@@ -1,6 +1,6 @@
 {
-  "name": "grease",
-  "version": "3.0.0",
+  "name": "dirtfolk-farm",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "devDependencies": {

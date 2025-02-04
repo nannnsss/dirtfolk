@@ -20,17 +20,17 @@
   --900: 15% calc(c/2) h;
 
   /* source colors */
-  --neutral: oklch(80% 0.01 210);
-  --primary: oklch(30% 0.16 210);
-  --secondary: oklch(70% 0.11 20);
+  --neutral: oklch(47.86% 0.0735 64.47);
+  --primary: oklch(32.11% 0 0);
+  --secondary: oklch(56.35% 0.2407 260.82);
 
   /* preset colors */
   --color-text: light-dark(
     var(--primary),
-    white
+    #F5F3F5
   );
   --color-bg: light-dark(
-    white,
+    #F5F3F5,
     oklch(from var(--primary) var(--800))
   );
   --color-accent: var(--secondary);
@@ -42,7 +42,7 @@
     oklch(from var(--neutral) var(--50)),
     oklch(from var(--primary) var(--900))
   );
-  --color-shadow: black;
+  --color-shadow: #333;
 
   /* ---------------------------------------------------------------------------
   spacing
@@ -64,22 +64,22 @@
   --------------------------------------------------------------------------- */
 
   /* font stacks */
-  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-main: 'Alegreya-Variable', serif;
 
   --font-code: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   /* font properties */
   --font-mono: 0;
-  --font-weight: 400;
+  --font-weight: 300;
 
   @media (--dark) {
     --font-weight: 350;
   }
 
   /* font size */
-  --size-base: max(1.125em, min(calc(0.675em + 0.5vw), 1.875em));
-  --size-scale-sm: 1.2;
-  --size-scale-lg: 1.333;
+  --size-base: max(1.0em, min(calc(0.5em + 0.5vw), 1.2em));
+  --size-scale-sm: 1.0;
+  --size-scale-lg: 1.2;
   --size-xxxs: calc(var(--size-xxs) / var(--size-scale-sm));
   --size-xxs: calc(var(--size-xs) / var(--size-scale-sm));
   --size-xs: calc(var(--size-sm) / var(--size-scale-sm));

@@ -1,0 +1,47 @@
+@import "../_base/@media.css";
+
+@layer components {
+
+  .header {
+    font-family: 'Kavivanar-Regular';
+    text-decoration: none;
+  }
+
+  .docs-block {
+    @media (--md) {
+      padding-inline-start: clamp(1rem, 3vw, 3rem);
+    }
+  }
+
+  .demo-grid {
+    > div {
+      --color-bg: light-dark(
+        oklch(from var(--neutral) var(--200) / 50%),
+        oklch(from var(--primary) var(--700))
+      );
+
+      padding: var(--space-sm);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      margin-block: var(--space-sm);
+      font-size: var(--size-sm);
+    }
+  }
+
+  .demo-chips {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 0 var(--space-sm);
+    list-style: none;
+
+    & > li {
+      width: auto;
+      margin: 0;
+      padding: var(--space-sm);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      font-size: var(--size-xs);
+    }
+  }
+
+}

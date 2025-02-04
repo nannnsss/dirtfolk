@@ -3,13 +3,11 @@ layout: base
 ---
 
 <main class="grid {% if page.grid %}{{ page.grid }}{% endif %} pb-lg">
-
-  {% comment %}
-  <a href="/" class="grid__item --span-3 space --top-xl" aria-label="Grease">
-    {% render 'svg/grease.svg' %}
-  </a>
-  {% endcomment %}
+  
+  {% include "header.html" %}
 
   {{ content }}
+
+  {% include "footer.html" %}
 
 </main>
