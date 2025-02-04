@@ -6,3 +6,4 @@ Dirtfolk Farm is located on 80 acres of diverse land with in the Illinois Valley
 
 <img src="/assets/images/holobolo-summer-bg.jpg">
 
+We are located within a larger land project named holo'bolo that engages in community healing, collaboration, solidarity, and learning projects.
