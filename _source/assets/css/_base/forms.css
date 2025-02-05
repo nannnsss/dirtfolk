@@ -7,7 +7,6 @@ form {
 }
 
 label {
-  font-weight: 500;
   display: block;
   flex-grow: 1;
 }
@@ -29,7 +28,7 @@ textarea {
 	background-color: var(--color-subtle);
 	border: var(--border-weight-md) solid var(--color-border);
   border-radius: var(--border-radius-sm);
-	padding: var(--space-sm);
+	padding: var(--space-xs);
   font-weight: 400;
 
   &::placeholder {

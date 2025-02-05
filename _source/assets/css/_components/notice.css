@@ -1,0 +1,16 @@
+.notice {
+    width: var(--span-12);
+    padding: var(--space-sm);
+    font-size: var(--size-md);
+    color: light-dark(
+      oklch(from var(--primary) var(--700)), 
+      oklch(from var(--primary) var(--100))
+    );
+    background-color: light-dark(
+      oklch(from var(--primary) calc(l*3) calc(c/8) h), 
+      oklch(from var(--primary) calc(l/2) calc(c/4) h)
+    );
+    border: var(--border-weight-lg) solid;
+    border-color: var(--secondary);
+    border-radius: 0.2rem;
+  }

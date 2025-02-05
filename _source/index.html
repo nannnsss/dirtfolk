@@ -11,7 +11,7 @@ eleventyImport:
 
 <section id="docs" class="grid --dense">
   
-  <nav class="docs-block sticky@md start-10 span-3 border-left@md mb-lg">
+  <nav class="docs-block sticky@md start-10 span-3 border-left@md mb-0">
     <small-details>
       <details>
         <summary class="header size-lg weight-400 uppercase tracking-lg pt-xs pb-sm">Menu</summary>
@@ -30,9 +30,9 @@ eleventyImport:
     </small-details>
   </nav>
   
-  <article class="docs-block start-1 span-9 measure-xl">
+  <article class="docs-block start-1 span-9 measure-lg">
     {%- for post in collections.home -%}
-      <h2 id="{{ post.data.title | slugify }}">{{ post.data.title }}</h2>
+      <h1 id="{{ post.data.title | slugify }}">{{ post.data.title }}</h1>
       {{ post.content }}
     {%- endfor -%}
   </article>

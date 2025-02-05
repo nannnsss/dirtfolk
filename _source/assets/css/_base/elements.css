@@ -231,11 +231,7 @@ pre {
 }
 
 code {
-  font-family: var(--font-code);
-  padding: 0.1rem var(--space-xxs);
-  font-size: 90%;
-  -webkit-box-decoration-break: clone;
-
+  padding: 0.1rem var(--space-sm);
   :is(pre) & {
     border: none;
     background-color: transparent;
@@ -300,3 +296,4 @@ dt {
 dd {
   margin-block-end: var(--space-sm);
 }
+
