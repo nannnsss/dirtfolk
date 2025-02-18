@@ -1,10 +1,10 @@
 ---
-title: About the Dirtfolk
-description: Grease takes the friction out of building fast, adaptable, aesthetic websites.
+title: Farm Plans
+description: Current status and future plans
 layout: page.html
 stylesheet: pages/page.css
 eleventyImport:
-  collections: ["about", "nav"]
+  collections: ["plans", "nav"]
 # noindex: true
 # canonical: https://example.com/page.html
 ---
@@ -30,7 +30,7 @@ eleventyImport:
   </nav>
   
   <article class="docs-block start-1 span-9 measure-xl">
-    {%- for post in collections.about -%}
+    {%- for post in collections.plans -%}
       <h1 id="{{ post.data.title | slugify }}">{{ post.data.title }}</h1>
       {{ post.content }}
     {%- endfor -%}

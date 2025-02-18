@@ -82,7 +82,7 @@ animate-on-scroll {
 }
 
 h1 {
-  margin-block: var(--space-xs) var(--space-lg);
+  margin-block: var(--space-md) var(--space-xs);
   font-size: var(--size-xl);
   font-weight: 800;
   letter-spacing: var(--tracking-sm);
